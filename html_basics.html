@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>Devslopes learn to code!</title>
+    <meta name="description" content="Your description">
+    <meta name="author" content="Yash">
+    <meta name="keywords" content="HTML,basics">
+    <meta name="viewport" content="width = device-width,initial-scale = 1.0">
+    <!-- viewport => Controls how website is displayed on different devices -->
   </head>
   <body>
     <!-- <img src="" alt=""> The image tab to add image
@@ -14,8 +19,8 @@
     <ul>
       <!-- ul is used for unordered list
       li is for list -->
-      <li><a href="#">Home</a></li>
-      <!-- The a tag above is used to make it a hyperlink  -->
+      <li><a href="#" target="_blank">Home</a></li>
+      <!-- The a tag above is used to make it a hyperlink, target = "_blank" is for opening the link in new tab -->
       <li>About</li>
       <li>Courses</li>
     </ul>
@@ -28,30 +33,40 @@
 
     <!-- Displaying data with tables -->
     <table border="2" cellpadding = "10" cellspacing = "2">
-      <tr>
-        <!-- table row <tr></tr>
-             table data <td></td> -->
-        <td> <button>IOS 12 Course </button> </td>
-        <td> <button>Android Course</button> </td>
-        <td> <button>Unity 3D Course</button> </td>
-      </tr>
-      <tr>
-        <td> <button>Web Course</button> </td>
-        <td> <button>Node API Course</button> </td>
-        <td> <button>Angular 2 Course</button> </td>
-      </tr>
-
-    </table>
-    <!-- Lets convert the ul that we made above to a table -->
-    <table cellspacing = "4">
-      <tr>
-        <td> <a href="#">Home</a>
-        </td>
-        <td><a href="#">About</a>
-        </td>
-        <td><a href="#">Courses</a></td>
-      </tr>
-    </table>
+      <caption>List of Courses</caption>
+      <thead>
+        <tr>
+          <th>Courses1</th>
+          <th>Courses2</th>
+          <th>Courses3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- table row <tr></tr>
+               table data <td></td> -->
+          <td> <button>IOS 12 Course </button> </td>
+          <td> <button>Android Course</button> </td>
+          <td> <button>Unity 3D Course</button> </td>
+        </tr>
+        <tr>
+          <td colspan="2"> <button>Web Course</button> </td>
+          <!-- colspan => one entry takes n columns of the table -->
+          <td> <button>Node API Course</button> </td>
+          <td> <button>Angular 2 Course</button> </td>
+        </tr>
+        </tbody>
+      </table>
+      <!-- Lets convert the ul that we made above to a table -->
+      <table cellspacing = "4">
+        <tr>
+          <td> <a href="#">Home</a>
+          </td>
+          <td><a href="#">About</a>
+          </td>
+          <td><a href="#">Courses</a></td>
+        </tr>
+      </table>
     <hr>
     <!-- <ol>
       Ordered List tag
@@ -63,20 +78,66 @@
       <li>Fun and exciting</li>
       <li>Affordable</li>
     </ol>
-    <!-- Adding a video => just go to any youtube video and there by using share find embedded in it and then just copy and paste -->
+    <!-- Adding a video => just go to any youtube video and there by using share find embedded in it and then just copy and paste
+    You can also embedd any other website inside your own website <iframe src="www.google.com/" width="100" height="250"></iframe>-->
     <iframe width="500" height="315" src="https://www.youtube.com/embed/375sYbwU-Aw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
+    <video src="#" controls poster = " " height ="" width = "">
+      <!-- # => video.mp4 controls tag is used to add control buttons to the video
+      poster = "abc.jpg" tag is for adding thumbnail to the video of your choice
+      autoplay or loop to play the video again-->
+    </video>
     <h2>Contact Us</h2>
+    <!-- Containers are of two types inline tabs and block elements
+    Inline tabs are the ones which are able to sit next to each other Ex=> <a href="#">a1</a> <a href="#">a2</a> OR the span tag
+    Block Elements are the ones which are not. Ex=> <p>p1</p> <p>p2</p> or <div> div tag </div>-->
+    <span> Span 1</span>
+    <span> Span 2</span>
+    <div >Div 1</div>
+    <div >Div 2</div>
     <form>
       Name :
       <br>
       <input type="text">
       Email :
       <br>
-      <input type="text">
+      <input type="text" value = "Enter your email">
+      Break :
+      <br>
+      <input type="password" >
       <br>
       <button type="button">Submit</button>
+      <!-- type = date,file,password,email,range,checkbox,radio(radiobutton),submit, -->
       <input type="submit" value="SUBMIT">
+      <textarea rows="8" cols="80">Enter something</textarea>
+
     </form>
+    <header><nav>
+      <!-- Navigational elements, if we have a list of different links of websites -->
+    </nav>
+      <!-- header => Contains the elements which are on every page of your website -->
+
+    </header>
+    <main>
+      <!-- Contains all your content -->
+      <article>
+        <section>
+          <!-- to break up article,section tag doesn't necesserely require article tag but the both happen to go good together -->
+        </section>
+        <section>
+          <h1></h1>
+          <!-- Multiple sections can be there -->
+        </section>
+        <aside>
+          <!-- Not directly related to main content ex = advertisements -->
+        </aside>
+        <!-- All the text for article -->
+      </article>
+
+    </main>
+    <footer>
+      <!-- Additional links, social media links,etc -->
+    </footer>
+
   </body>
 </html>
