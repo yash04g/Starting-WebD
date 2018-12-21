@@ -1,0 +1,28 @@
+#box{
+    background-color: #aaaaaa;
+    width: 200px;
+    height: 150px;
+    /* box-shadow: 20px 20px 0px 0px #aaaaaa; */
+    padding: 25px;
+    margin: 300px;
+    /* transform-box: translate(30px,30px); */
+    /* transform: translate(30px,30px); => Position changes */
+    /* transform: scale(0.5); Shrinks */
+    /* transform: skew(5deg,0); skews at an angle (x,y) */
+    /* transform: rotate(30deg); rotates at given angle */   
+}
+#box2{
+    background-color:blue ;
+    width:200px;
+    height:150px;
+    padding:25px;
+    margin:20px;
+}
+#box2:hover{
+    transform: translate(50px,50px);
+    transition-duration: 1.5s;
+}
+#box2:active{
+    transform: translate(-20px,-20px);
+    transition-duration: 1.5s;
+}
